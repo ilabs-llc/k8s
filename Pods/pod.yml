@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: webapp-pod
   labels:
-    name: webapp
+    app: webapp
 spec:
   containers:
-  - name: webapp-ctr
-    image: ilabsllc/demoapp
-    ports:
-      - containerPort: 80
+    - name: webapp-ctr
+      image: ilabsllc/demoapp
+      ports:
+        - containerPort: 8080
