@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-pod
+  labels:
+    app: webapp
+spec:
+  containers:
+    - name: webapp-ctr
+      image: ilabsllc/demoapp
+      ports:
+        - containerPort: 8080
