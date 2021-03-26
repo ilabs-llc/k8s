@@ -16,7 +16,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 1
       containers:
-      - name: webapp-pod
+      - name: webapp-ctr
         image: ilabsllc/demoapp
         imagePullPolicy: Always
         ports:
